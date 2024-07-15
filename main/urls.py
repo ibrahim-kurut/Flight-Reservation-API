@@ -55,5 +55,8 @@ urlpatterns = [
     
     # Register endpoint
     path('api/users/', include("account.urls")),
-     path('api/token/', TokenObtainPairView.as_view()),
+    path('api/token/', TokenObtainPairView.as_view()),
+
+
+    path('api/', include("flight_app.urls")),
 ]
